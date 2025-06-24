@@ -21,7 +21,7 @@ string armStrongNum(int n)
 // Armstrong Number in range
 
 vector<int> armStrongInRange(int n, int m)
-{ // #2
+{ // #2    Range(100,1000) 153,370,371,407 
     n = abs(n);
     m = abs(m);
     vector<int> arr;
