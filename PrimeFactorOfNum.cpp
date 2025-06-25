@@ -5,7 +5,7 @@ using namespace std;
 vector<int> PrimeFactor(int num)
 {
     vector<int> arr;
-    auto PrimeNum = [](int n) { // lambda function used in c++
+    auto PrimeNum = [](int n) { // lambda function used in c++ it si the anonymous funtion 
         int count = 0;
         int value;
         for (int i = n; i >= 2; i--)
