@@ -36,13 +36,7 @@ int lcmNum(int num1, int num2)
     }
     return 0;
 }
-int main()
-{
-    int a, b;
-    cin >> a >> b;
-    int final = lcmNum(a, b);
-    cout << final;
-}
+
 
 // leap year code
 void Leap_year(int year)
