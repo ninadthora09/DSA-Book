@@ -32,14 +32,14 @@ void factorOfNum(int num)
     }
 }
 
-// strong number mean 145= 1!+4!+5! if both of this are equall then known as strong number
+// strong number mean 145= 1!+4!+5! known as strong number
 int strongNum(int num)
 { // #4
     if (num == 0)
         return 0;       // edge case
     int original = num; // storing the original number
     int storingFactNum = 0;
-    while (num != 0 or num > 0 or num >= 1)
+    while (num != 0 )
     { // can be selected any one
         storingFactNum += factorialNum(num % 10);
         num /= 10;

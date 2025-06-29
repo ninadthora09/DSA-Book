@@ -3,7 +3,7 @@ using namespace std;
 
 void automorphicNum(int number)
 {
-    // Automrphic Number means numbers whose square unit digit same as the number it self
+    // Automrphic Number means number whose square's unit digit is same as the number it self
     // 5: 5*5= 25, 6: 6*6=36 , 10:10*10=100
     int squareNum = number * number;
     int extra = squareNum % 10;

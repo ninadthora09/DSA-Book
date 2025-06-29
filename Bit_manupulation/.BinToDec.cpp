@@ -2,7 +2,7 @@
 using namespace std;
 
 int binToDec(int num)
-{
+{ //1100= 12
     int deciNum = 0;
     int count = 0;
     while (num > 0)

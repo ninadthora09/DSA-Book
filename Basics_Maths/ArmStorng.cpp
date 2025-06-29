@@ -1,19 +1,19 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-string armStrongNum(int n)
-{ // #1
-    n = abs(n);
-    if (n == 0 or n <= 9)
-        return "Invalide Number";
-    int num = n;
-    int NewNum = 0;
-    while (n != 0)
+string armStrongNum(int num)
+{ // #1  sum of cube of each digit is equal to number 1^3+ 5^3+ 3^3= 153
+    num = abs(num);
+    if (num == 0 or num <= 9)
+        return "Not a Armstrong Number";
+    int original = num;
+    int total = 0;
+    while (num != 0)
     {
-        NewNum = NewNum + pow((n % 10), 3);
-        n /= 10;
+        total = total + pow((num % 10), 3);
+        num /= 10;
     }
-    if (NewNum == num)
+    if (total == original)
         return "Yes It's a Armstrong Number";
     else
         return "Not a Armstrong Number";
@@ -29,18 +29,16 @@ vector<int> armStrongInRange(int n, int m)
     {
         int original = i;
         int temp = i;
-        int NewNum = 0;
+        int total = 0;
         while (temp > 0)
         {
-            NewNum = NewNum + pow((temp % 10), 3);
+            total = total+ pow((temp % 10), 3);
             temp /= 10;
         }
-        if (NewNum == original)
+        if (total == original)
         {
-            arr.push_back(NewNum);
+            arr.push_back(total);
         }
-        else
-            continue;
     }
     return {arr};
 }

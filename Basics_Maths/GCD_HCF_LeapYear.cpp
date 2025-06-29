@@ -27,7 +27,7 @@ int lcmNum(int num1, int num2)
     num1 = abs(num1);
     num2 = abs(num2);
     int mulOfbothNum = num1 * num2;
-    for (int i = 1; i <= mulOfbothNum; i++)
+    for (int i = max(num1,num2); i <= mulOfbothNum; i++)
     {
         if (i % num1 == 0 and i % num2 == 0)
         {
